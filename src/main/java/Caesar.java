@@ -16,11 +16,9 @@ public class Caesar {
                 else if(a>'Z'&&a<'a'){
                     a=(char)('A'+(a-'Z'-1));
                 }
-                newMessage+=a;
             }
-            else{
-                newMessage+=a;
-            }
+            newMessage+=a;
+
         }
         return newMessage;
     }
@@ -40,11 +38,10 @@ public class Caesar {
                 else if(a<'A'){
                     a=(char)('Z'-('A'-a-1));
                 }
-                newMessage+=a;
             }
-            else{
-                newMessage+=a;
-            }
+
+            newMessage+=a;
+
         }
         return newMessage;
     }
@@ -64,11 +61,9 @@ public class Caesar {
                 else if(a>'Z'&&a<'a'){
                     a=(char)('A'+(a-'Z'-1));
                 }
-                newMessage+=a;
             }
-            else{
-                newMessage+=a;
-            }
+            newMessage+=a;
+
         }
         return newMessage;
     }
@@ -88,11 +83,10 @@ public class Caesar {
                 else if(a<'A'){
                     a=(char)('Z'-('A'-a-1));
                 }
-                newMessage+=a;
             }
-            else{
-                newMessage+=a;
-            }
+
+            newMessage+=a;
+
         }
         return newMessage;
     }
@@ -105,7 +99,7 @@ public class Caesar {
 
         System.out.println("Would you like to \"encrypt\" or \"decrypt\" a message?");
         String command = scan.nextLine().trim().toLowerCase();
-
+//
         if (command.equals("encrypt")) {
             System.out.println("Please enter your message to be encrypted: ");
             String message = scan.nextLine();
